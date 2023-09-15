@@ -1,6 +1,7 @@
 var f1,f2:text;
      i,j,max:longint;
      S,t:string;
+     vtd,vtc: longint;
 {-------------------------------------------------}
 function kt(s:string):boolean;
 var k:longint;
@@ -24,6 +25,9 @@ begin
                 max:=length(copy(s,i,j-i+1));
                 t:=copy(s,i,j-i+1);
            end;
-           write(f2,t);
+           writeln(f2,t);
+           vtd:= pos(t,s);
+           vtc:= length(s)-length(t);
+           write(f2,length(t),' ',vtd,' ',vtc);
      close(f1);  close(f2);
 end.
