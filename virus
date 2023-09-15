@@ -1,0 +1,6 @@
+for i:= 1 to n do 
+   begin
+       for j:= 1 to n do
+           while pos(A[j],B[i]) do
+                tim vt pos
+                xoa 
